@@ -1,0 +1,59 @@
+.footerRoditelj {
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(48, 48, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    color: white;
+}
+
+.footerSections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10rem;
+}
+
+.footerSection {
+    width: 20rem;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footerSection p,
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.footerSection a:hover {
+    transform: scale(1.1);
+}
+
+.footerSection h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    margin-bottom: auto;
+}
+
+.prava {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(94, 94, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1rem;
+}
