@@ -1,0 +1,86 @@
+.headerRoditelj {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 133);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    color: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.logoINazivSajta {
+    width: 24rem;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nazivSajta h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigacija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 100%;
+    gap: 3rem;
+    margin-right: auto;
+    margin-left: -2rem;
+}
+
+.navigacija a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.navigacija a:hover {
+    transform: scale(1.1);
+}
+
+.drustveneMreze {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    gap: 1.5rem;
+}
+
+.ikona {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    text-align: center;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.ikona svg {
+    fill: white;
+}
+
+.ikona:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
