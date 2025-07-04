@@ -23,7 +23,7 @@ export default function CategoryButtons() {
 		<div className="categoryDiv">
 			<div className="mainButton" onClick={() => setPosition(!position)}>
 				<TbCategory className="categoryIcon" />
-				Categories
+				<span className="buttonText">Categories</span>
 				<p className="openText">{position ? "Open" : "Close"}</p>
 			</div>
 			<div
@@ -39,36 +39,40 @@ export default function CategoryButtons() {
 					className="categoryButton"
 					onClick={() => setCategory("")}
 				>
-					<TbWorld className="categoryIcon" /> All
+					<TbWorld className="categoryIcon" />{" "}
+					<span className="buttonText">All</span>
 				</div>
 				<div
 					style={category === "Restaurant" ? aCategory : iaCategory}
 					className="categoryButton"
 					onClick={() => setCategory("Restaurant")}
 				>
-					<MdRestaurant className="categoryIcon" /> Restaurants
+					<MdRestaurant className="categoryIcon" />
+					<span className="buttonText">Restaurants</span>
 				</div>
 				<div
 					style={category === "Hotel" ? aCategory : iaCategory}
 					className="categoryButton"
 					onClick={() => setCategory("Hotel")}
 				>
-					<FaBed className="categoryIcon" /> Hotels
+					<FaBed className="categoryIcon" />{" "}
+					<span className="buttonText">Hotels</span>
 				</div>
 				<div
 					style={category === "Culture" ? aCategory : iaCategory}
 					className="categoryButton"
 					onClick={() => setCategory("Culture")}
 				>
-					<PiCastleTurretFill className="categoryIcon" /> Cultural
-					objects
+					<PiCastleTurretFill className="categoryIcon" />{" "}
+					<span className="buttonText">Cultural objects</span>
 				</div>
 				<div
 					style={category === "Other" ? aCategory : iaCategory}
 					className="categoryButton"
 					onClick={() => setCategory("Other")}
 				>
-					<FaCartShopping className="categoryIcon" /> Stores & Other
+					<FaCartShopping className="categoryIcon" />{" "}
+					<span className="buttonText">Stores & Other</span>
 				</div>
 			</div>
 			<div
@@ -76,7 +80,8 @@ export default function CategoryButtons() {
 				className="saveButton"
 				onClick={() => setSavedLoc(!showSavedLoc)}
 			>
-				<FaRegBookmark className="categoryIcon" /> Saved
+				<FaRegBookmark className="categoryIcon" />
+				<span className="buttonText">Saved</span>
 			</div>
 		</div>
 	);

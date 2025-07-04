@@ -3,3 +3,8 @@ body {
 	overflow-x: hidden;
 	font-family: "Cabin", sans-serif;
 }
+
+html,
+body {
+	overflow-x: hidden;
+}
