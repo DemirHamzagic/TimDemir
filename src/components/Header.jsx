@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
 import Logo from '../assets/grb.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -15,7 +16,7 @@ const Header = () => {
             </div>
             <div className='navigacija'>
                 <a href='#'>Početna</a>
-                <a href='#'>O našem gradu</a>
+                 <a >O nama</a>
                 <a href='#'>Lokacije</a>
                 <a href='#'>Kontakt</a>
             </div>
