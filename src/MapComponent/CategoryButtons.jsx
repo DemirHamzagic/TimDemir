@@ -1,4 +1,4 @@
-import "./MapComponent.css";
+import "../styles/MapComponent.css";
 import { TbCategory } from "react-icons/tb";
 import { MdRestaurant } from "react-icons/md";
 import { FaBed } from "react-icons/fa";

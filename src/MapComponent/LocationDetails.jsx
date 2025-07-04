@@ -1,4 +1,4 @@
-import "./MapComponent.css";
+import "../styles/MapComponent.css";
 import { MapContext } from "../components/ContextFile";
 import { useContext, useEffect } from "react";
 

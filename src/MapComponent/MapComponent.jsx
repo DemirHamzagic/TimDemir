@@ -1,4 +1,4 @@
-import "./MapComponent.css";
+import "../styles/MapComponent.css";
 import "leaflet/dist/leaflet.css";
 import markerIcon1 from "../assets/MarkerImages/markerImage1.png";
 import markerIcon2 from "../assets/MarkerImages/markerImage2.png";
