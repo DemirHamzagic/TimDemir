@@ -1,7 +1,375 @@
+/* MAP DETAIL DIV */
+
+.mapInfoDiv {
+	overflow-y: auto;
+	position: fixed;
+	width: 25rem;
+	height: 100vh;
+	background-color: white;
+	z-index: 3;
+	transition: 0.2s;
+	border-bottom-right-radius: 0.7rem;
+	border-top-right-radius: 0.7rem;
+	box-shadow: 0 0 0.7rem black;
+	scrollbar-width: thin;
+}
+
+.detailImage {
+	width: 100%;
+	height: 15rem;
+	object-fit: cover;
+}
+
+.detailDivText {
+	padding: 0.9rem;
+	padding-left: 1.5rem;
+	padding-right: 4rem;
+	border-bottom: 1px solid rgb(201, 201, 201);
+	padding-bottom: 2rem;
+}
+
+
+.detailHeader {
+	margin: 0;
+	font-size: 1.6rem;
+	font-weight: lighter;
+}
+
+.locationCategory {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: 0;
+	margin-top: 0.4rem;
+	color: gray;
+	display: inline;
+}
+
+.locationCategory:hover {
+	text-decoration: underline gray;
+	cursor: pointer;
+}
+
+.detailDivLocation {
+	padding: 0.9rem;
+	padding-left: 1.5rem;
+	padding-right: 3rem;
+	border-bottom: 1px solid rgb(201, 201, 201);
+	padding-bottom: 2rem;
+
+}
+
+.detailCoords {
+	display: flex;
+	align-items: center;
+}
+
+.detailCoordsSpan {
+	color: rgb(0, 81, 255)
+}
+
+.addressText {
+	display: flex;
+	align-items: center;
+}
+
+.addressIcon {
+	font-size: 1.8rem;
+	color: rgb(0, 81, 255);
+	padding-right: 0.3rem;
+}
+
+.closeButton {
+	position: absolute;
+	background-color: white;
+	border-radius: 100%;
+	text-align: center;
+	cursor: pointer;
+	width: 3rem;
+	height: 3rem;
+	right: 0.8rem;
+	top: 0.4rem;
+	box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.359);
+}
+
+.closeSymbol {
+	height: 3rem;
+	width: 2rem;
+	font-weight: 800;
+	color: rgb(93, 93, 93);
+	font-size: 0rem;
+}
+
+.closeSymbol:hover {
+	color: rgb(0, 81, 255);
+}
+
+.closeText {
+	background-color: black;
+	padding: 0.2rem 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-top: 0.1rem;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.359);
+	transition: 0.2s;
+	opacity: 0;
+}
+
+.closeButton:hover .closeText {
+	opacity: 1;
+}
+
+.heartBox {
+	cursor: pointer;
+	border-radius: 100%;
+	border: 2px solid rgb(0, 81, 255);
+	height: 2.4rem;
+	width: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 1rem;
+}
+
+.heartBox:hover {
+	background-color: rgb(230, 245, 255);
+}
+
+.locationHeart {
+	color: rgb(0, 81, 255);
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.heartDiv {
+	position: absolute;
+	right: 0rem;
+}
+
+.heartText {
+	cursor: default;
+	position: absolute;
+	background-color: black;
+	padding: 0.2rem 0.5rem;
+	color: white;
+	margin-top: 0.3rem;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.359);
+	opacity: 0;
+	right: 0.7rem;
+	margin-top: 2.9rem;
+	transition: 0.2s;
+}
+
+.heartDiv:hover .heartText {
+	opacity: 1;
+}
+
+/* MAP DETAIL DIV ABOUT US */
+
+.detailDivAbout {
+	padding: 0.9rem;
+	padding-left: 1.5rem;
+	padding-right: 3rem;
+}
+
+
+/* MAP COMPONENT */
+
 .mapHeaderText {
 	text-align: center;
 }
 
 .leaflet-container {
 	height: 33rem;
+	z-index: 0;
 }
+
+.markerPopUp {
+	position: relative;
+	display: flex;
+}
+
+.mapMarkerName {
+	margin: 0;
+	padding-right: 4rem;
+}
+
+.mapMarkerHeart {
+	color: rgb(0, 81, 255);
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.mapHeartBox {
+	border-radius: 100%;
+	border: 1px solid rgb(0, 81, 255);
+	cursor: pointer;
+
+	height: 2.4rem;
+	width: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+}
+
+.mapHeartBox:hover {
+	background-color: rgb(230, 245, 255);
+}
+
+.mapMarkerImage {
+	height: 7.5rem;
+	width: 100%;
+	z-index: 0;
+	object-fit: cover;
+	object-position: center;
+	position: relative;
+	border-radius: 0.6rem;
+	margin-bottom: 0.3rem;
+}
+
+/* CATEGORY BUTTONS */
+.categoryDiv {
+	position: relative;
+}
+
+.mainButton {
+	position: absolute;
+	background-color: white;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	height: 1.75rem;
+	padding: 0.5rem;
+	border-radius: 3rem;
+	box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.359);
+	cursor: pointer;
+	transition: 0.05s;
+	right: 1rem;
+	top: 1rem;
+}
+
+.categoryButton {
+	margin-left: 0.4rem;
+	background-color: white;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	height: 1.75rem;
+	padding: 0.5rem;
+	border-radius: 3rem;
+	box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.359);
+	cursor: pointer;
+	transition: 0.05s;
+	right: 1rem;
+	top: 1rem;
+}
+
+.categoryButton:hover {
+	background-color: rgb(231, 231, 231);
+}
+
+.mainButton:hover {
+	background-color: rgb(231, 231, 231);
+}
+
+.openText {
+	position: absolute;
+	background-color: black;
+	padding: 0.2rem 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	margin-bottom: 6rem;
+	margin-left: 2rem;
+	border-radius: 0.3rem;
+	font-size: 1rem;
+	box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.359);
+	transition: 0.2s;
+	opacity: 0;
+}
+
+.mainButton:hover .openText {
+	opacity: 1;
+}
+
+.categoryIcon {
+	font-size: 1.5rem;
+}
+
+.categories {
+	position: absolute;
+	display: flex;
+	right: 9.5rem;
+	top: 1rem;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	z-index: 1;
+}
+
+.saveButton {
+	position: absolute;
+	background-color: white;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	height: 1.75rem;
+	padding: 0.5rem;
+	border-radius: 3rem;
+	box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.359);
+	cursor: pointer;
+	transition: 0.05s;
+	right: 1rem;
+	top: 4.5rem;
+}
+
+.saveButton:hover {
+	background-color: rgb(231, 231, 231);
+}
+
+@media (max-width: 850px) {
+
+	html,
+	body {
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+
+	.mainButton {
+		right: 1rem;
+	}
+
+	.saveButton {
+		right: 1rem;
+	}
+
+	.buttonText {
+		display: none;
+	}
+
+	.categories {
+		right: 4rem;
+	}
+
+	.openText {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.mapInfoDiv {
+		width: 100%;
+	}
+}
+
+@media (min-width: 851px) {}

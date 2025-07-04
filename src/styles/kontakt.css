@@ -1,0 +1,81 @@
+.kontakt-stranica {
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-kontejner {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.kontakt-informacije {
+    flex: 1;
+    min-width: 250px;
+}
+
+.kontakt-informacije h2 {
+    margin-bottom: 10px;
+}
+
+.kontakt-informacije ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.kontakt-informacije li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.kontakt-form {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontakt-form h2 {
+    margin-bottom: 10px;
+}
+
+.kontakt-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.kontakt-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.kontakt-form button:hover {
+    background-color: #0056b3;
+}
