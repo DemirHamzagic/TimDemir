@@ -6,7 +6,7 @@
 	width: 25rem;
 	height: 100vh;
 	background-color: white;
-	z-index: 1;
+	z-index: 3;
 	transition: 0.2s;
 	border-bottom-right-radius: 0.7rem;
 	border-top-right-radius: 0.7rem;
@@ -336,3 +336,40 @@
 .saveButton:hover {
 	background-color: rgb(231, 231, 231);
 }
+
+@media (max-width: 850px) {
+
+	html,
+	body {
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+
+	.mainButton {
+		right: 1rem;
+	}
+
+	.saveButton {
+		right: 1rem;
+	}
+
+	.buttonText {
+		display: none;
+	}
+
+	.categories {
+		right: 4rem;
+	}
+
+	.openText {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.mapInfoDiv {
+		width: 100%;
+	}
+}
+
+@media (min-width: 851px) {}
