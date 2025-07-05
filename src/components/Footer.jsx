@@ -15,7 +15,7 @@ const Footer = () => {
 				<div className="footerSection">
 					<h2>Linkovi</h2>
 					<Link to={"/"}>Pocetna</Link>
-					<a href="#">Lokacije</a>
+					<Link to={"/lokacije"}>Lokacije</Link>
 					<Link to={"/kontakt"}>Kontakt</Link>
 				</div>
 				<div className="footerSection">

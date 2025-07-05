@@ -38,7 +38,16 @@ const Header = () => {
 				>
 					O nama
 				</Link>
-				<a href="#">Lokacije</a>
+				<Link
+					to={"/lokacije"}
+					style={
+						location.pathname === "/lokacije"
+							? activeLink
+							: inactiveLink
+					}
+				>
+					Lokacije
+				</Link>
 				<Link
 					to={"/kontakt"}
 					style={
