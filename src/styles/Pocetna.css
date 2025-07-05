@@ -1,0 +1,54 @@
+.Novi-Pazar-Vrbak{
+    
+    }
+
+.Naslov{
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 50px;
+    
+}
+
+.Novi-Pazar-Text{
+    text-align: center;
+    color: rgb(48, 48, 133);
+    padding: 10px;
+
+}
+
+.Uvod{
+    padding: 10px;
+    color: rgb(48, 48, 133);
+}
+
+.Div-Hrana,
+.Div-Tvrdjave,
+.Div-Kultura{
+    width: 400px;
+    border: 3px solid  rgb(48, 48, 133);
+    color: rgb(48, 48, 133);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Slika-Mantija,
+.Slika-Tvrdjava,
+.Slika-Zanata{
+    width: 400px;
+    height: 400px;
+
+}
+
+.Div-Roditelj{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.paragraf{
+    height: 111px;
+}
